@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai1</title>
+</head>
+<body>
+<h1>B1: Tính Điểm</h1>
+Vật Lý<input type="number" id="vl">
+<br>
+Hóa Học<input type="number" id="hh">
+<br>
+Sinh Học<input type="number" id="sh">
+<br>
+
+<button onclick="diemtrungbinh()">Điểm trung bình</button>
+<button onclick="diemtong()">Điểm tổng</button>
+
+<script>
+    function diemtrungbinh() {
+        let a = document.getElementById("vl").value
+        let b = document.getElementById("hh").value
+        let c = document.getElementById("sh").value
+        alert((a + b + c) / 3)
+    }
+
+    function diemtong() {
+        let d = +document.getElementById("vl").value
+        let e = +document.getElementById("hh").value
+        let f = +document.getElementById("sh").value
+        alert(d + e + f)
+    }
+
+</script>
+<hr>
+<h1>B2:Đổi Nhiệt Độ</h1>
+<input type="number" placeholder="Độ C" id="ab">
+<button onclick="tinhnhietdo() " id="c">Click</button>
+<script>
+    function tinhnhietdo() {
+        let doc = document.getElementById("ab").value
+        let dof = 1.8
+        let dov = 32
+        alert(doc * dof + dov)
+    }
+</script>
+<hr>
+<h1>B3: Diện Tích Hình Tròn</h1>
+<p>Bán kính=<input type="number" id="r1"></p>
+<p>Bán kính=<input type="number" id="r2"></p>
+<button onclick="dientichhinhtron()" ; id="">Tính</button>
+<script>
+    function dientichhinhtron() {
+        let a = document.getElementById("r1").value
+        let b = document.getElementById("r2").value
+        let c = 3.14
+        alert(a * b * c)
+    }
+</script>
+<hr>
+<h1>B4:Tính Chu Vi Hình Tròn</h1>
+
+<p>Bán kính=<input type="number" id="rx"></p>
+<button onclick="dientichhinhtron()">Tính</button>
+<script>
+    function dientichhinhtron() {
+        let a = document.getElementById("rx").value
+        let b = 2
+        let c = 3.14
+        alert(a * b * c)
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bai2</title>
+
+</head>
+<body>
+<table>
+    <tr>
+        <th><label for="Amount">Amount</label></th>
+        <th>From Currenry</th>
+        <th>To Currenry</th>
+        <th></th>
+    </tr>
+    <tr>
+        <td><input type="number" id="Amount"></td>
+        <td><select id="From">
+            <option value="VND">VND</option>
+            <option value="USD">USD</option></select>
+           </td>
+        <td><select id="To">
+            <option value="USD">USD</option>
+            <option value="VND">VND</option>
+            </select></td>
+        <td><button onclick="ChangeMoney()">Chuyển đổi</button></td>
+    </tr>
+</table>
+<p id="result"></p>
+<script src="b2tiente.js"></script>
+</body>
+</html>
